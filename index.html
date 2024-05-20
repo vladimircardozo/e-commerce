@@ -1,47 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="./img/logo.svg">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <div class="">
-            <img src="./img/logo.svg" alt="">
+        <div class="menu container">
+            <img class="logo-1" src="./img/logo.svg" alt="">
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="./img/menu.png" alt="">
+                <img src="./img/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
-                <div>
+                <div class="menu-1">
                     <ul>
                         <li><a href="">Inicio</a></li>
                         <li><a href="">Servicios</a></li>
                         <li><a href="">Productos</a></li>
                     </ul>
                 </div>
-                <img src="./img/logo.svg" alt="">
-                <div>
+                <img src="./img/logo.svg" class="logo-2" alt="">
+                <div class="menu-2">
                     <ul>
                         <li><a href="">Horario</a></li>
                     </ul>
-                    <div>
+                    <div class="socials">
                         <a href="">
-                            <div>
+                            <div class="social">
                                 <img src="./img/s1.svg" alt="">
                             </div>
                         </a>
                         <a href="">
-                            <div>
+                            <div class="social">
                                 <img src="./img/s2.svg" alt="">
                             </div>
                         </a>
                         <a href="">
-                            <div>
+                            <div class="social">
                                 <img src="./img/s3.svg" alt="">
                             </div>
                         </a>
@@ -49,12 +50,12 @@
                 </div>
             </nav>
         </div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slaider">
+                            <div class="slaider-text">
                                 <h1>Hamburguesa</h1>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium est porro nam placeat saepe natus laudantium nulla asperiores, animi itaque pariatur libero voluptates adipisci beatae veniam hic corporis? Esse!</p>
                                 <div>
@@ -67,13 +68,100 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="slaider">
+                            <div class="slaider-text">
+                                <h1>Torta</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium est porro nam placeat saepe natus laudantium nulla asperiores, animi itaque pariatur libero voluptates adipisci beatae veniam hic corporis? Esse!</p>
+                                <div>
+                                    <a href="">Comprar</a>
+                                    <a href="">Menu</a>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/slider2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slaider">
+                            <div class="slaider-text">
+                                <h1>Hamburguesa</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium est porro nam placeat saepe natus laudantium nulla asperiores, animi itaque pariatur libero voluptates adipisci beatae veniam hic corporis? Esse!</p>
+                                <div>
+                                    <a href="">Comprar</a>
+                                    <a href="">Menu</a>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/slider3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </header>
-    <main></main>
+    <main class="products">
+        <div class="tabs container">
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Hamburguesa</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./img/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./img/food2.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="./img/food3.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer></footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
