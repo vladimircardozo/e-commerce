@@ -199,6 +199,7 @@ body {
     cursor: pointer;
     color: #A7A7A7;
     font-weight: 700;
+    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
@@ -217,6 +218,10 @@ body {
 .tabs input[type="radio"]:checked + label {
     border-bottom: 2px solid #DB241B;
     color: #ffffff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
 }
 
 .product {
@@ -506,5 +511,35 @@ body {
         font-size: 16px;
     }
 
+    .horario {
+        padding: 30px;
+        text-align: center;
+    }
 
+    .horario-info h2 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .horario-txt {
+        flex-direction: column;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links h4{
+        margin: 25px 0 10px 0;
+    }
 }
