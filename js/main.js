@@ -42,4 +42,5 @@ tabInpunts.forEach(function(input) {
         let thisSwiper = document.getElementById(`swiper` + id);
         thisSwiper.swiper.update();
     })
+    
 });
